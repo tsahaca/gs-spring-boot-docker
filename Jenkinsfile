@@ -66,7 +66,7 @@ spec:
       }
     }
     
-    stage('Docker Build') {
+    stage('Docker Build and Push') {
       steps {
         container('docker') {
         withCredentials([[$class: 'UsernamePasswordMultiBinding',
